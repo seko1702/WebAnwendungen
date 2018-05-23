@@ -9,6 +9,5 @@ public abstract class Vertrag {
 	Partei partei1;
 	Partei partei2;
 	Date datum;
-	
 
 }

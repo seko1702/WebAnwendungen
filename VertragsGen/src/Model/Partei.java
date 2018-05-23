@@ -2,13 +2,13 @@ package Model;
 
 public abstract class Partei {
 	
-	String straße;
-	int hausnummer;
-	String HausnummerZusatz;
-	int plz;
-	String ort;
-	int telnummer;
-	String eMail;
+	private String strasse;
+	private int hausnummer;
+	private String hausnummerZusatz;
+	private int plz;
+	private String ort;
+	private int telnummer;
+	private String eMail;
 	
-
+	
 }
