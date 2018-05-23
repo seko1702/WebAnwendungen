@@ -5,12 +5,14 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DatabaseCon {
+	
+	 private static String url;
 
 	 public static Connection connect() {
 	        Connection conn = null;
 	        try {
 	            // db parameters
-	            String url = "jdbc:sqlite:C:/Users/Benji/Documents/PSE Projekt/VertragsGen.sqlite";
+	            url = "jdbc:sqlite:C:/Users/Benji/Documents/PSE Projekt/VertragsGen.sqlite";
 	            // create a connection to the database
 	            conn = DriverManager.getConnection(url);
 	            
@@ -31,5 +33,13 @@ public class DatabaseCon {
 	            }
 	        }*/
 	    }
+
+	public static String getUrl() {
+		return url;
+	}
+
+	public static void setUrl(String url) {
+		DatabaseCon.url = url;
+	}
 	
 }
