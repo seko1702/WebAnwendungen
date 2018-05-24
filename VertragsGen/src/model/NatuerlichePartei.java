@@ -7,9 +7,9 @@ public class NatuerlichePartei extends Partei{
 	private String name;
 	private String vorname;
 	private String personalausweisNr;
-	private String ausstellungsbehörde;
-	private Date  ausstellungsdatum;
-	private Date Geburtsdatum;
+	private String ausstellungsbehoerde;
+	private Date ausstellungsdatum;
+	private Date geburtsdatum;
 	
 	public String getName() {
 		return name;
@@ -29,11 +29,11 @@ public class NatuerlichePartei extends Partei{
 	public void setPersonalausweisNr(String personalausweisNr) {
 		this.personalausweisNr = personalausweisNr;
 	}
-	public String getAusstellungsbehörde() {
-		return ausstellungsbehörde;
+	public String getAusstellungsbehoerde() {
+		return ausstellungsbehoerde;
 	}
-	public void setAusstellungsbehörde(String ausstellungsbehörde) {
-		this.ausstellungsbehörde = ausstellungsbehörde;
+	public void setAusstellungsbehoerde(String ausstellungsbehoerde) {
+		this.ausstellungsbehoerde = ausstellungsbehoerde;
 	}
 	public Date getAusstellungsdatum() {
 		return ausstellungsdatum;
@@ -42,10 +42,10 @@ public class NatuerlichePartei extends Partei{
 		this.ausstellungsdatum = ausstellungsdatum;
 	}
 	public Date getGeburtsdatum() {
-		return Geburtsdatum;
+		return geburtsdatum;
 	}
 	public void setGeburtsdatum(Date geburtsdatum) {
-		Geburtsdatum = geburtsdatum;
+		this.geburtsdatum = geburtsdatum;
 	}
 	
 	
