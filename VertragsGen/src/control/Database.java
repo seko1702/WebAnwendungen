@@ -78,7 +78,7 @@ public class Database {
 	}
 	
 	//Speichert eine Juristische Partei in die Datenbank 
-public void writeJuristischePartei(JuristischePartei jp) {
+public static void writeJuristischePartei(JuristischePartei jp) {
 		
 		String strasse = jp.getStrasse();
 		int hausnummer = jp.getHausnummer();
@@ -105,7 +105,7 @@ public void writeJuristischePartei(JuristischePartei jp) {
 	}
 
 	//Liest eine Juristische Partei aus der Datenbank
-	public JuristischePartei readJuristischePartei(int id) {
+	public static JuristischePartei readJuristischePartei(int id) {
 		
 		try {
 			Connection conn = DatabaseCon.connect();
