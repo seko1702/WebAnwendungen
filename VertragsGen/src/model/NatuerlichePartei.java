@@ -1,16 +1,21 @@
 package model;
 
-import java.util.Date;
-
 public class NatuerlichePartei extends Partei{
 
+	private int id;
 	private String name;
 	private String vorname;
 	private String personalausweisNr;
 	private String ausstellungsbehoerde;
-	private Date ausstellungsdatum;
-	private Date geburtsdatum;
+	private String ausstellungsdatum;
+	private String geburtsdatum;
 	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getName() {
 		return name;
 	}
@@ -35,16 +40,16 @@ public class NatuerlichePartei extends Partei{
 	public void setAusstellungsbehoerde(String ausstellungsbehoerde) {
 		this.ausstellungsbehoerde = ausstellungsbehoerde;
 	}
-	public Date getAusstellungsdatum() {
+	public String getAusstellungsdatum() {
 		return ausstellungsdatum;
 	}
-	public void setAusstellungsdatum(Date ausstellungsdatum) {
+	public void setAusstellungsdatum(String ausstellungsdatum) {
 		this.ausstellungsdatum = ausstellungsdatum;
 	}
-	public Date getGeburtsdatum() {
+	public String getGeburtsdatum() {
 		return geburtsdatum;
 	}
-	public void setGeburtsdatum(Date geburtsdatum) {
+	public void setGeburtsdatum(String geburtsdatum) {
 		this.geburtsdatum = geburtsdatum;
 	}
 	

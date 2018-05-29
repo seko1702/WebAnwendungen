@@ -2,7 +2,7 @@ package model;
 
 public class Mietobjekt {
 	
-	private String straﬂe;
+	private String strasse;
 	private int hausNr;
 	private String hausNrZusatz;
 	private int plz;
@@ -16,11 +16,11 @@ public class Mietobjekt {
 	private boolean garagenplatz;
 	private boolean gartenVorhanden;
 	
-	public String getStraﬂe() {
-		return straﬂe;
+	public String getStrasse() {
+		return strasse;
 	}
-	public void setStraﬂe(String straﬂe) {
-		this.straﬂe = straﬂe;
+	public void setStrasse(String strasse) {
+		this.strasse = strasse;
 	}
 	public int getHausNr() {
 		return hausNr;

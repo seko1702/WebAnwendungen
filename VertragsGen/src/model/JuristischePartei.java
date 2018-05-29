@@ -2,11 +2,17 @@ package model;
 
 public class JuristischePartei extends Partei{
 	
+	private int id;
 	private String firmenname;
 	private String handelsregister;
 	
 	
-	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getFirmenname() {
 		return firmenname;
 	}
