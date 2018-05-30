@@ -1,6 +1,10 @@
 package model;
 
 public class NatuerlichePartei extends Partei{
+	
+	public NatuerlichePartei(){
+		
+	};
 
 	private int id;
 	private String name;

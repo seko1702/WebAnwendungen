@@ -5,6 +5,10 @@ import java.util.Date;
 
 public class Fahrzeug {
 
+	public Fahrzeug(){
+		
+	};
+	
 	private String typ;
 	private String marke;
 	private String modell;
