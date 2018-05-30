@@ -2,6 +2,9 @@ package model;
 
 public class KfzKaufvertrag extends Vertrag {
 	
+	private int ID;
+	private Partei partei1;
+	private Partei partei2;
 	private Fahrzeug fahrzeug;
 	private boolean alleinigesEigentum;
 	private boolean austauschmotor;
@@ -19,6 +22,16 @@ public class KfzKaufvertrag extends Vertrag {
 	private int anzahlSchluessel;
 	private int kaufpreis;
 	private int anzahlung;
+	
+	
+	
+	public Partei getPartei1() {
+		return partei1;
+	}
+	
+	public Partei getPartei2() {
+		return partei2;
+	}
 	
 	public Fahrzeug getFahrzeug() {
 		return fahrzeug;

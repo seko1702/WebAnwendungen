@@ -3,6 +3,10 @@ package model;
 import java.util.Date;
 
 public class NatuerlichePartei extends Partei{
+	
+	public NatuerlichePartei(){
+		
+	};
 
 	private String name;
 	private String vorname;
