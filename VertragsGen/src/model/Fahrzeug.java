@@ -1,5 +1,6 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Fahrzeug {
@@ -16,7 +17,7 @@ public class Fahrzeug {
 	private String coZweiEffizienz;
 	private String amtlichesKennzeichen;
 	private Date erstzulassung;
-	private String[] zusatzAusstattung;
+	private ArrayList<String> zusatzAusstattung;
 	private int anzahlVorbesitzer;
 	private boolean gewerbNutzung;
 	
@@ -93,10 +94,10 @@ public class Fahrzeug {
 	public void setErstzulassung(Date erstzulassung) {
 		this.erstzulassung = erstzulassung;
 	}
-	public String[] getZusatzAusstattung() {
+	public ArrayList<String> getZusatzAusstattung() {
 		return zusatzAusstattung;
 	}
-	public void setZusatzAusstattung(String[] zusatzAusstattung) {
+	public void setZusatzAusstattung(ArrayList<String> zusatzAusstattung) {
 		this.zusatzAusstattung = zusatzAusstattung;
 	}
 	public int getAnzahlVorbesitzer() {

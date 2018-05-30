@@ -10,6 +10,8 @@ import model.NatuerlichePartei;
 
 public class Database {
 	
+	private static Connection conn;
+	
 	//Speichert eine Natuerliche Partei in die Datenbank 
 	public static void writeNatuerlichePartei(NatuerlichePartei np) {
 		
@@ -27,7 +29,7 @@ public class Database {
 		String geburtsdatum = np.getGeburtsdatum();
 	
 		try {
-			Connection conn = DatabaseCon.connect(); //conn Objekt global machen? 
+			conn = DatabaseCon.connect();
 			Statement sta = conn.createStatement();
 			
 			String query = "insert into Partei values (null, 'NatürlichePartei', '"+ strasse +"',"+ hausnummer +", '"+ hausnummerZusatz +"',"+ plz +", '"+ ort +"', "+ telnummer +", null , null , '"+ name +"', '"+ vorname +"', '"+ personalausweisNr +"', '"+ ausstellungsbehoerde +"', '"+ ausstellungsdatum +"', '"+ geburtsdatum +"');";
@@ -44,7 +46,7 @@ public class Database {
 	public static NatuerlichePartei readNatuerlichePartei(int id) {
 		
 		try {
-			Connection conn = DatabaseCon.connect();
+			conn = DatabaseCon.connect();
 			Statement sta = conn.createStatement();
 			
 			String query = "select * from Partei where Partei_ID="+ id;
@@ -90,7 +92,7 @@ public static void writeJuristischePartei(JuristischePartei jp) {
 		String handelsregister = jp.getHandelsregister();
 	
 		try {
-			Connection conn = DatabaseCon.connect();
+			conn = DatabaseCon.connect();
 			Statement sta = conn.createStatement();
 			
 			
@@ -105,10 +107,10 @@ public static void writeJuristischePartei(JuristischePartei jp) {
 	}
 
 	//Liest eine Juristische Partei aus der Datenbank
-	public static JuristischePartei readJuristischePartei(int id) {
+	public static JuristischePartei readJuristischePartei(int id) { 
 		
 		try {
-			Connection conn = DatabaseCon.connect();
+			conn = DatabaseCon.connect();
 			Statement sta = conn.createStatement();
 			
 			String query = "select  ";
@@ -137,10 +139,10 @@ public static void writeJuristischePartei(JuristischePartei jp) {
 		}
 	}
 	
-	//Löscht eine Partei aus der Datenbank
+	//Loescht eine Partei aus der Datenbank
 	public static void deletePartei(int id) {
 		try {
-			Connection conn = DatabaseCon.connect();
+			conn = DatabaseCon.connect();
 			Statement sta = conn.createStatement();
 			
 			String query = "delete from Partei where Partei_ID="+ id;

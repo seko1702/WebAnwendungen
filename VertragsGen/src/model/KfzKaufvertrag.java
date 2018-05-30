@@ -1,5 +1,7 @@
 package model;
 
+import java.util.ArrayList;
+
 public class KfzKaufvertrag extends Vertrag {
 	
 	private int id; 
@@ -8,11 +10,11 @@ public class KfzKaufvertrag extends Vertrag {
 	private boolean austauschmotor;
 	private int austauschmotorLaufleistung;
 	private boolean unfallschaden;
-	private String[] listeUnfallschaeden;
-	private String[] beschaedigungen;
+	private ArrayList<String> listeUnfallschaeden;
+	private ArrayList<String> beschaedigungen;
 	private boolean ummeldungUnverzueglich;
 	private boolean fahrzeugAbgemeldet;
-	private String[] sondervereinbarungen;
+	private ArrayList<String> sondervereinbarungen;
 	private boolean fahrzeugschein;
 	private boolean fahrzeugbrief;
 	private boolean stillegungsBescheinigung;
@@ -57,16 +59,16 @@ public class KfzKaufvertrag extends Vertrag {
 	public void setUnfallschaden(boolean unfallschaden) {
 		this.unfallschaden = unfallschaden;
 	}
-	public String[] getListeUnfallschaeden() {
+	public ArrayList<String> getListeUnfallschaeden() {
 		return listeUnfallschaeden;
 	}
-	public void setListeUnfallschaeden(String[] listeUnfallschaeden) {
+	public void setListeUnfallschaeden(ArrayList<String> listeUnfallschaeden) {
 		this.listeUnfallschaeden = listeUnfallschaeden;
 	}
-	public String[] getBeschaedigungen() {
+	public ArrayList<String> getBeschaedigungen() {
 		return beschaedigungen;
 	}
-	public void setBeschaedigungen(String[] beschaedigungen) {
+	public void setBeschaedigungen(ArrayList<String> beschaedigungen) {
 		this.beschaedigungen = beschaedigungen;
 	}
 	public boolean isUmmeldungUnverzueglich() {
@@ -81,10 +83,10 @@ public class KfzKaufvertrag extends Vertrag {
 	public void setFahrzeugAbgemeldet(boolean fahrzeugAbgemeldet) {
 		this.fahrzeugAbgemeldet = fahrzeugAbgemeldet;
 	}
-	public String[] getSondervereinbarungen() {
+	public ArrayList<String> getSondervereinbarungen() {
 		return sondervereinbarungen;
 	}
-	public void setSondervereinbarungen(String[] sondervereinbarungen) {
+	public void setSondervereinbarungen(ArrayList<String> sondervereinbarungen) {
 		this.sondervereinbarungen = sondervereinbarungen;
 	}
 	public boolean isFahrzeugschein() {

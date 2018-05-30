@@ -15,7 +15,7 @@ public class Main {
 		np.setName("Hans");
 		np.setVorname("sad");
 
-		Database.writeNatuerlichePartei(np);
+		//Database.writeNatuerlichePartei(np);
 		//np = Database.readNatuerlichePartei(3);
 		System.out.println(np.getStrasse());
 	}

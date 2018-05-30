@@ -1,5 +1,6 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Mietvertrag {
@@ -15,7 +16,7 @@ public class Mietvertrag {
 	private float hoechstMiete;
 	private Date hoechstMieteBis;
 	private float heizungWarmwasserKosten;
-	private String[] betriebskostenArten;
+	private ArrayList<String> betriebskostenArten;
 	private boolean betriebskostenPauschalbeistrag;
 	private boolean betriebskostenVorauszahlung;
 	private float betriebskosten;
@@ -23,9 +24,9 @@ public class Mietvertrag {
 	private String kontoinhaber;
 	private String iban;
 	private float maxHeizkostenInZweiAbrechnungsperioden;
-	private String[] arbeitenDieDerMieterVornehemnKann;
+	private ArrayList<String> arbeitenDieDerMieterVornehemnKann;
 	private int pauschale;
-	private String[] arbeitenVorEinzug;
+	private ArrayList<String> arbeitenVorEinzug;
 	private boolean energieausweis;
 	private boolean richtigkeitEnergieausweisVersichert;
 	private Partei zustaendigGartenpflege;
@@ -102,10 +103,10 @@ public class Mietvertrag {
 	public void setHeizungWarmwasserKosten(float heizungWarmwasserKosten) {
 		this.heizungWarmwasserKosten = heizungWarmwasserKosten;
 	}
-	public String[] getBetriebskostenArten() {
+	public ArrayList<String> getBetriebskostenArten() {
 		return betriebskostenArten;
 	}
-	public void setBetriebskostenArten(String[] betriebskostenArten) {
+	public void setBetriebskostenArten(ArrayList<String> betriebskostenArten) {
 		this.betriebskostenArten = betriebskostenArten;
 	}
 	public boolean isBetriebskostenPauschalbeistrag() {
@@ -150,10 +151,10 @@ public class Mietvertrag {
 	public void setMaxHeizkostenInZweiAbrechnungsperioden(float maxHeizkostenInZweiAbrechnungsperioden) {
 		this.maxHeizkostenInZweiAbrechnungsperioden = maxHeizkostenInZweiAbrechnungsperioden;
 	}
-	public String[] getArbeitenDieDerMieterVornehemnKann() {
+	public ArrayList<String> getArbeitenDieDerMieterVornehemnKann() {
 		return arbeitenDieDerMieterVornehemnKann;
 	}
-	public void setArbeitenDieDerMieterVornehemnKann(String[] arbeitenDieDerMieterVornehemnKann) {
+	public void setArbeitenDieDerMieterVornehemnKann(ArrayList<String> arbeitenDieDerMieterVornehemnKann) {
 		this.arbeitenDieDerMieterVornehemnKann = arbeitenDieDerMieterVornehemnKann;
 	}
 	public int getPauschale() {
@@ -162,10 +163,10 @@ public class Mietvertrag {
 	public void setPauschale(int pauschale) {
 		this.pauschale = pauschale;
 	}
-	public String[] getArbeitenVorEinzug() {
+	public ArrayList<String> getArbeitenVorEinzug() {
 		return arbeitenVorEinzug;
 	}
-	public void setArbeitenVorEinzug(String[] arbeitenVorEinzug) {
+	public void setArbeitenVorEinzug(ArrayList<String> arbeitenVorEinzug) {
 		this.arbeitenVorEinzug = arbeitenVorEinzug;
 	}
 	public boolean isEnergieausweis() {
