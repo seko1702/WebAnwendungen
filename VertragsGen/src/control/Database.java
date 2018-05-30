@@ -134,10 +134,12 @@ public static void writeJuristischePartei(JuristischePartei jp) {
 			conn.close();
 			
 			return jp;
-		}
+		}catch(SQLException e) {
+			 System.out.println(e.getMessage());
+			 return null;}
 	}
 
-	public void writeKfzKaufvertrag(KfzKaufvertrag vertrag) {
+	public static void writeKfzKaufvertrag(KfzKaufvertrag vertrag) {
 		
 		try {
 			Connection conn = DatabaseCon.connect();
@@ -165,7 +167,7 @@ public static void writeJuristischePartei(JuristischePartei jp) {
 		
 	}
 	
-    public void writeUnfallschaeden(KfzKaufvertrag vertrag) {
+    public static void writeUnfallschaeden(KfzKaufvertrag vertrag) {
     	
     	Connection conn = DatabaseCon.connect();
     	try {
@@ -176,7 +178,7 @@ public static void writeJuristischePartei(JuristischePartei jp) {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			 return null;
+			 
 		}
 	}
 	
@@ -202,7 +204,7 @@ public static void writeJuristischePartei(JuristischePartei jp) {
     	
     }
 
-	public int booleanConv(boolean bool) {
+	public static int booleanConv(boolean bool) {
 
 		if (bool == true)
 			return 1;

@@ -13,7 +13,7 @@ public class DatabaseCon {
 	        try {
 	            // db parameters
 	            
-	            url = "jdbc:sqlite:/Users/sewerynkozlowski/Downloads/VertragsGen.dmg";
+	        	url = "jdbc:sqlite:Ressource/VertragsGen.db";
 	            // create a connection to the database
 	            conn = DriverManager.getConnection(url);
 	            
